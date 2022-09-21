@@ -5,9 +5,9 @@ class Pr1 {
         System.out.print("Введите количество вагонов (положительное целое число): ");
         Scanner scanner = new Scanner(System.in);
         try {
-            Double quantity = Double.parseDouble(scanner.nextLine());
+            int quantity = Integer.parseInt(scanner.nextLine());
             scanner.close();
-            System.out.println(Math.round(quantity * 75));
+            System.out.println(quantity * 75);
         } catch (Exception e) {
             System.out.println("Ошибка!");
             main(args);
