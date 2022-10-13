@@ -1,5 +1,7 @@
 t, day = int(input()), input()
-if 10<=t<=18:
+if t < 10:
+    raise Exception("Error")
+elif 10<=t<=18:
     if day == "Morning":
         Outfit = "Sweatshirt"
         Shoes = "Sneakers"
@@ -19,7 +21,7 @@ elif 18<=t<=24:
     elif day == 'Evening':
         Outfit = 'Shirt'
         Shoes = 'Moccasins'
-else:
+elif t >=25:
     if day == "Morning":
         Outfit = 'T-Shirt'
         Shoes = 'Sandals'
