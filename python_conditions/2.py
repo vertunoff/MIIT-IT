@@ -1,4 +1,4 @@
-fr, day, kg = input(), input(), float(input())
+fr, day, kg = input().lower(), input().capitalize(), float(input())
 ans = None
 if day in ("Monday", "Tuesday", "Wednesday", "Thursday", "Friday"):
     if fr == "banana":
@@ -30,4 +30,6 @@ elif day in ("Saturday", "Sunday"):
         ans = 5.6*kg
     elif fr == "grapes":
         ans = 4.2*kg
+if kg < 0:
+    ans = None
 print(f"{ans:.2f}" if ans else "error")
