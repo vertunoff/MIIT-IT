@@ -8,11 +8,11 @@ public class N4 {
         double kg = scanner.nextDouble();
         double count = 0;
         if (!(day.matches("monday|tuesday|wednesday|thursday|friday|saturday|sunday")
-                && fruit.matches("banana|apple|orange|grape friut|kiwi|pineapple|grapes"))) {
+                && fruit.matches("banana|apple|orange|grape fruit|kiwi|pineapple|grapes")
+                && kg >= 0)) {
             System.out.println("error");
             return;
         }
-
         if (!day.matches("saturday|sunday")) {
             if (fruit.equals("banana")) {
                 count = kg * 2.50;
