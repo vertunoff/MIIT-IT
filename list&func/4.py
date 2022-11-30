@@ -15,7 +15,7 @@ def islocal(ip:str):
         return True
     return False
 
-def todecimal(ip:str):
+def todecimal(ip):
     return ip[0] * 256**3 + ip[1] * 256**2 + ip[2] * 256**1 + ip[3]
 
 try:
