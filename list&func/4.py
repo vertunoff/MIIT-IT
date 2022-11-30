@@ -10,7 +10,7 @@ def isip(s):
     except:
         return False
 
-def islocal(ip:str):
+def islocal(ip):
     if (ip[0], ip[1]) in ((10, 0), (172, 16), (192, 168)):
         return True
     return False
